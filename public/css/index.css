@@ -1,0 +1,127 @@
+*{ margin: 0; padding: 0; }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-image: url(../img/fundo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.leftContent{
+    padding: 20px;
+    background-color: #FFF;
+    width: 400px;
+    height: 480px;
+    border-radius: 5px;
+
+    box-shadow:  5px 5px 15px #000000,
+                 -5px -5px 15px #ded7d7;
+}
+
+.leftContent p {
+    margin-top: 112px;
+    color: red;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastrarTarefa {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.btn {
+    margin-top: 390px;
+    position: fixed;
+    width: 350px;
+}
+
+.cadastrarTarefa textarea {
+    max-height: 286px;
+    height: 221px;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 480px;
+    color: #FFF;
+}
+
+.top {
+    display: flex;
+    gap: 140px;
+    justify-content: space-evenly;
+    width: 590px;
+    font-size: 16px;
+    
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 80%;
+    color: #000;
+    max-width: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+    padding: 0 2%;
+} 
+
+.task {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+    gap: 130px;
+    width: 100%;
+    height: 70px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    min-height: 70px;
+}
+
+.btnDel {
+    background-color: rgb(151, 16, 16);
+    font-weight: 400;
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+    border: none;
+    border-radius: 3px;
+}
+
+span {
+    color: #FFF;
+}
+
+#horizontalCut {
+    border-color: #FFF;
+    height: 12px;
+    width: 580px;
+}
+
+/* responsive  */
+
+@media(max-width: 1366px) {
+    .rightContent {
+        margin-left: 40px;
+    }
+}
